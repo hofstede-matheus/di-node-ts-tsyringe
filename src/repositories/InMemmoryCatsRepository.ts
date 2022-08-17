@@ -1,8 +1,8 @@
 import { Cat } from "../domain/entities/Cat";
 import { CatsRepository } from "../domain/repositories/CatsRepository";
 
-export class FileCatsRepository implements CatsRepository {
-  async getCats(): Promise<Cat[] | Error> {
+export class InMemmoryCatsRepository implements CatsRepository {
+  async getCats(): Promise<Cat[] | undefined> {
     return [
       {
         name: "cat1",
