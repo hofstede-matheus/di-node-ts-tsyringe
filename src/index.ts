@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { CatsController } from './controllers/CatsController'
 import { GetCatsUseCase } from "./interactors/GetCatsUseCase";
 import { InMemmoryCatsRepository } from "./repositories/InMemmoryCatsRepository";
